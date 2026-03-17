@@ -82,7 +82,7 @@ class UberEats(BaseModel):
         return v
 
 
-with open('uber2.json','r',encoding='utf-8') as f:
+with open('files//uber.json','r',encoding='utf-8') as f:
     data=json.load(f)
 
 
@@ -197,7 +197,7 @@ except Exception as e:
     print("Final object error:", e)
 
 
-with open('uber_output2.json','w',encoding='utf-8') as f:
+with open('uber_output.json','w',encoding='utf-8') as f:
     json.dump(uber_eats.model_dump(),f,ensure_ascii=False,indent=4,default=str)
 
 
